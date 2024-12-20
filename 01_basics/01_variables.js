@@ -23,3 +23,30 @@ accountCity = "Kolkata"
 
 console.log(accountId);
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
+
+
+/*
+    let vs var
+    ->var is globally scoped whereas let and const are locally scoped
+    ->var can be updated and re-declared within its scope
+    ->let can be updated but not re-declared
+    ->const can neither be updated nor be re-declared
+    ->var variables are intialized with undefined
+      whereas let and const variables are not readily intialized
+      but if let doesn't find its intialization value
+      then it also gets initialized with undefined  
+*/
+var a = 6;
+{
+    var a = 5;
+    console.log(a)
+}
+console.log(a)
+
+
+let b = 5;
+{
+    let b = 6;
+    console.log(b)
+}
+console.log(b)
